@@ -83,12 +83,12 @@ function App() {
 
   return (
     <div className="App container d-flex justify-content-center " style={{height: "100vh"}}>
-     <div id="drum-machine" className="row pe-2 ps-2 align-self-center col-xs-12 col-sm-6 col-md-7 " >
+     <div id="drum-machine" className="row pe-2 ps-2 align-self-center col-xs- col-sm-6 col-md-7 " >
       <div id="display" className="col-xs-12 col-sm-12 col-md-7  pt-4 ">
         {songsOne.map(song => (<Pad key={song.id} song={song} volume={volume} setRecord={setRecord} />))}
       </div>
       <div className="controlBord  col-xs-12 col-sm-12 col-md-4 mt-4 ms-4">
-        <h3 className="text-primary">Colume</h3>
+        <h3 className="text-primary">Volume</h3>
         <input 
           type="range" 
           step="0.01"
